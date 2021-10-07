@@ -23,7 +23,7 @@ class OrderServiceTest {
     void setUp() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/dep7_backup_pos", "root", "mysql");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/dep7_pos", "root", "test");
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }

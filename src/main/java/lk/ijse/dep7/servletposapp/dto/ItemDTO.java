@@ -16,7 +16,7 @@ public class ItemDTO implements Serializable {
         this.code = code;
         this.description = description;
         this.unitPrice = unitPrice;
-        this.qtyOnHand = qtyOnHand;
+        this.setQtyOnHand(qtyOnHand);
     }
 
     public String getCode() {
@@ -57,7 +57,7 @@ public class ItemDTO implements Serializable {
                 "code='" + code + '\'' +
                 ", description='" + description + '\'' +
                 ", unitPrice=" + unitPrice +
-                ", qtyOnHand=" + qtyOnHand +
+                ", qtyOnHand=" + getQtyOnHand() +
                 '}';
     }
 }
